@@ -9,7 +9,7 @@ class Album extends Component {
 	componentDidMount = () => {
 		const { album } = this.props.location.state;
 		console.log(album);
-		fetch('http://localhost:4000/musiclist', {
+		fetch('http://ec2-13-125-105-172.ap-northeast-2.compute.amazonaws.com:4000/musiclist', {
 			method: 'post',
 			headers: {
 				'Content-type': 'application/json'

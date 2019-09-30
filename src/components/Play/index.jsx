@@ -8,7 +8,7 @@ class Play extends Component {
 
 	componentDidMount = () => {
 		const { item } = this.props;
-		fetch('http://localhost:4000/fetchAlbum', {
+		fetch('http://ec2-13-125-105-172.ap-northeast-2.compute.amazonaws.com:4000/fetchAlbum', {
 			method: 'post',
 			headers: {
 				'Content-type': 'application/json'
